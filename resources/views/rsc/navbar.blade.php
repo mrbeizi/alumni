@@ -318,8 +318,8 @@
                     </div>
                     </div>
                     <div class="flex-grow-1">
-                    <span class="fw-semibold d-block lh-1">{{Auth::user()->name}}</span>
-                    <small>{{Auth::user()->email}}</small>
+                    <span class="fw-semibold d-block lh-1">{{Auth::guard('admin')->user()->name}}</span>
+                    <small>{{Auth::guard('admin')->user()->email}}</small>
                     </div>
                 </div>
                 </a>
